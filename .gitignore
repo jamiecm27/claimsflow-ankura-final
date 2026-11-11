@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+backend/.venv/
+backend/__pycache__/
+backend/uploads/
+backend/data/workbench.json
+.DS_Store

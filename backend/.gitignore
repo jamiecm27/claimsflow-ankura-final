@@ -1,0 +1,6 @@
+uploads/
+data/workbench.json
+.env
+.env.*
+.venv/
+__pycache__/

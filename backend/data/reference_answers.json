@@ -1,0 +1,125 @@
+{
+  "CLM-001": {
+    "fields": {
+      "policyNumber": "SMA-778821-GA",
+      "policyholderName": "Ethan Walker",
+      "incidentDate": "05/17/2026",
+      "incidentTime": "08:45 AM",
+      "location": "Intersection of Peachtree Rd and Piedmont Rd | Atlanta, GA 30305",
+      "description": "Insured vehicle was stopped at a red light and was struck from behind by another vehicle. No airbag deployment. No injuries reported at scene. Rear bumper, trunk lid, and left tail lamp damaged. | Rear bumper crushed; trunk lid dented; left tail lamp cracked. Vehicle drivable with caution.",
+      "claimant": "Ethan Walker",
+      "thirdParties": "2019 Honda Civic LX Other VIN 2HGFC2F66KH654321 Other Plate GA RMD2048 Carrier or Agency Name Citywide Auto Insurance",
+      "contactDetails": "770-555-4412 | ethan.walker@example.com",
+      "assetType": "2021 Toyota Camry SE Sedan",
+      "assetId": "4T1G11AK9MU123456",
+      "estimatedDamage": "3850",
+      "claimType": "Personal Auto",
+      "attachments": "APD-26-0517-8841",
+      "initialEstimate": "3850"
+    },
+    "expectedRoute": "Fast-track",
+    "basis": "Synthetic baseline extracted from source form and scenario-specific expected escalation; review reference answers before using as a gold standard."
+  },
+  "CLM-002": {
+    "fields": {
+      "policyNumber": "GLC-IL-4400192",
+      "policyholderName": "Priya Shah",
+      "incidentDate": "05/16/2026",
+      "incidentTime": "09:20 PM",
+      "location": "Parking lot exit near 1500 N Clybourn Ave | Chicago, IL 60610",
+      "description": "Unknown dark SUV sideswiped insured vehicle while exiting parking lot and left the scene. Insured reports neck soreness and was evaluated at urgent care. Witness noted partial plate beginning with IL ZF. | Left front fender scraped, driver door dented, mirror broken.",
+      "claimant": "Priya Shah",
+      "thirdParties": "Unknown dark SUV, possible black Ford Explorer Other VIN Unknown Other Plate Partial IL ZF**** Carrier or Agency Name Unknown",
+      "contactDetails": "773-555-2277 | priya.shah@example.com",
+      "assetType": "2020 Honda Accord EX Sedan",
+      "assetId": "1HGCV1F45LA102938",
+      "estimatedDamage": "5200",
+      "claimType": "Injury",
+      "attachments": "CPD-HR-56291",
+      "initialEstimate": "5200"
+    },
+    "expectedRoute": "Specialist Queue",
+    "basis": "Synthetic baseline extracted from source form and scenario-specific expected escalation; review reference answers before using as a gold standard."
+  },
+  "CLM-003": {
+    "fields": {
+      "policyNumber": "DSI-AZ-330782",
+      "policyholderName": "Noah Martinez",
+      "incidentDate": "05/14/2026",
+      "incidentTime": "06:10 AM",
+      "location": "Apartment garage at 5122 N 12th Pl | Phoenix, AZ 85014",
+      "description": "Vehicle reported stolen from locked apartment garage overnight. Vehicle recovered two days later with damaged ignition, broken passenger window and missing stereo equipment. No collision damage reported. | Broken passenger window, steering column damage, ignition tampered, stereo missing.",
+      "claimant": "Noah Martinez",
+      "contactDetails": "480-555-9300 | noah.martinez@example.com",
+      "assetType": "2018 Ford F-150 XLT Pickup",
+      "assetId": "1FTEW1E55JFB77881",
+      "estimatedDamage": "6750",
+      "claimType": "Theft",
+      "attachments": "PPD-2026-77802",
+      "initialEstimate": "6750"
+    },
+    "expectedRoute": "Manual Review",
+    "basis": "Synthetic baseline extracted from source form and scenario-specific expected escalation; review reference answers before using as a gold standard."
+  },
+  "CLM-004": {
+    "fields": {
+      "policyNumber": "PNI-WA-905512",
+      "policyholderName": "Evergreen Catering LLC",
+      "incidentDate": "05/15/2026",
+      "incidentTime": "05:35 PM",
+      "location": "I-5 northbound near Exit 164 | Seattle, WA 98104",
+      "description": "Company van changed lanes and contacted another vehicle, then struck a roadside guardrail. No injuries reported. Damage to insured van, claimant vehicle and guardrail. | Right side panel dented, sliding door scraped, front bumper damaged.",
+      "claimant": "Marcus Reed",
+      "thirdParties": "2017 Subaru Outback Other VIN 4S4BSANC6H3334445 Other Plate WA BCD9123 Carrier or Agency Name Cascade Family Auto",
+      "contactDetails": "206-555-8008 | ops@evergreencatering.example",
+      "assetType": "2022 Mercedes-Benz Sprinter 2500 Cargo Van",
+      "assetId": "WD4PF0CDXNP445566",
+      "estimatedDamage": "9400",
+      "claimType": "Property Damage",
+      "attachments": "WSP-26-448119",
+      "initialEstimate": "9400"
+    },
+    "expectedRoute": "Specialist Queue",
+    "basis": "Synthetic baseline extracted from source form and scenario-specific expected escalation; review reference answers before using as a gold standard."
+  },
+  "CLM-005": {
+    "fields": {
+      "policyNumber": "LSA-TX-702244",
+      "policyholderName": "Ava Thompson",
+      "incidentDate": "05/18/2026",
+      "incidentTime": "01:15 AM",
+      "location": "Street parking outside 7601 Burnet Rd | Austin, TX 78757",
+      "description": "Insured found front passenger window shattered and interior rummaged through. No collision. Sunglasses and phone charger missing. Glass damage only plus interior cleaning needed. | Passenger window shattered, minor scratches on door trim, glass inside cabin.",
+      "claimant": "Ava Thompson",
+      "contactDetails": "512-555-6609 | ava.thompson@example.com",
+      "assetType": "2019 Hyundai Elantra Sedan",
+      "assetId": "5NPD84LF7KH403020",
+      "estimatedDamage": "825",
+      "claimType": "Vandalism",
+      "attachments": "APD-ONLINE-26051833",
+      "initialEstimate": "825"
+    },
+    "expectedRoute": "Fast-track",
+    "basis": "Synthetic baseline extracted from source form and scenario-specific expected escalation; review reference answers before using as a gold standard."
+  },
+  "CLM-006": {
+    "fields": {
+      "policyNumber": "RMC-CO-661209",
+      "policyholderName": "Liam Carter",
+      "incidentDate": "05/13/2026",
+      "incidentTime": "04:40 PM",
+      "location": "Work parking lot at 1700 Lincoln St | Denver, CO 80203",
+      "description": "Severe hailstorm damaged insured vehicle while parked outdoors. Multiple dents to hood, roof and trunk. Windshield has small chip. No collision and no injuries. | Hail dents on hood, roof, trunk; small windshield chip.",
+      "claimant": "Liam Carter",
+      "contactDetails": "303-555-1919 | liam.carter@example.com",
+      "assetType": "2023 Subaru Forester Premium SUV",
+      "assetId": "JF2SKACCXPH778899",
+      "estimatedDamage": "4250",
+      "claimType": "Weather/Hail",
+      "attachments": "N/A",
+      "initialEstimate": "4250"
+    },
+    "expectedRoute": "Fast-track",
+    "basis": "Synthetic baseline extracted from source form and scenario-specific expected escalation; review reference answers before using as a gold standard."
+  }
+}
