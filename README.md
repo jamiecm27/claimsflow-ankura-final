@@ -1,4 +1,4 @@
-# AI-Based FNOL Claim Extraction & Routing Agent
+# AI-Based Claim Extraction & Routing Agent
 
 An intelligent insurance claim processing system that extracts, validates, classifies, and routes FNOL (First Notice of Loss) documents automatically using FastAPI and React.
 
