@@ -1,97 +1,76 @@
-# ClaimsFlow
+# ClaimsFlow v6
 ## AI-Assisted Insurance Claims Workbench
 
-**Ankura AI Advisory | Prototype Assessment | November 2026**
+** AI Advisory | Prototype Assessment | November 2026**
 
-**Developed and adapted by:** Jamie Campbell-Mooney  
-**Project status:** Private, non-commercial proof of concept  
-**Original project attribution:** Sanket Barde
+**Developer:** Jamie Campbell-Mooney  
+**Status:** Private, non-commercial proof of concept
 
 ---
 
-## 1. Project Overview
+## Overview
 
-ClaimsFlow is an interactive AI-assisted insurance claims processing prototype developed for the Ankura AI Advisory assessment.
+ClaimsFlow is an AI-assisted insurance claims processing prototype developed for and AI Advisory assessment.
 
-The application explores how artificial intelligence can support insurance claims processing, improve operational efficiency, reduce handling costs and assist human decision-making.
+The application explores how artificial intelligence can support insurance claims handling, improve operational efficiency and assist human decision-making.
 
-ClaimsFlow provides a practical demonstration of how insurance organisations might integrate AI into existing claims workflows while maintaining appropriate human oversight.
+It provides an interactive environment for examining traditional human-only claims processing alongside AI-assisted workflows.
 
-The prototype enables users to compare traditional human-only claims processing with AI-assisted workflows, evaluate AI-generated recommendations and examine potential operational benefits.
+The prototype is designed to demonstrate the opportunities, limitations and operational considerations associated with introducing AI into insurance claims management.
 
-**ClaimsFlow is a demonstration and evaluation tool, not a production insurance claims management system.**
+## Project Objectives
 
-## 2. Project Objectives
+ClaimsFlow investigates five key questions:
 
-The prototype was developed to investigate five questions:
+1. How can AI assist with insurance claim analysis and routing?
+2. Can AI reduce the time required to process claims?
+3. What potential cost savings could AI-assisted workflows generate?
+4. How can the quality of AI routing recommendations be evaluated?
+5. Where should human oversight remain in an AI-enabled claims process?
 
-1. How can AI support the extraction, analysis and routing of insurance claims?
-2. Can AI-assisted processing reduce the time required to handle claims?
-3. What potential cost savings could be achieved through AI-assisted workflows?
-4. How accurately can AI recommend appropriate claims routing decisions?
-5. How can insurers balance automation with human oversight?
+## Application Features
 
-The application provides an interactive environment in which these questions can be explored using synthetic claims, configurable assumptions and AI-assisted processing.
+### Claims Inbox
 
-## 3. Application Features
+The Claims Inbox provides an interface for viewing and managing insurance claims.
 
-### 3.1 Claims Inbox
+Key capabilities include:
 
-The Claims Inbox provides the main interface for reviewing and processing insurance claims.
+- Viewing and selecting claims.
+- Reviewing claim information.
+- Examining recommended processing routes.
+- Recording human review decisions.
+- Supporting AI-assisted claims analysis.
+- Maintaining a history of review activity.
 
-Features include:
+### AI Prototype Testing
 
-- Viewing and selecting insurance claims.
-- Examining claim information and supporting details.
-- Comparing human-only and AI-assisted processing approaches.
-- Reviewing AI-generated extraction and routing recommendations.
-- Identifying claims requiring additional review.
-- Supporting human oversight of AI recommendations.
+The testing environment supports comparisons between human-only and AI-assisted processing.
 
-The Claims Inbox demonstrates how AI could be integrated into a claims handler's existing workflow rather than operating as a completely independent decision-making system.
+Capabilities include:
 
-### 3.2 AI Prototype Testing
+- Selecting claims for evaluation.
+- Running Gemini-assisted claim analysis.
+- Comparing routing recommendations.
+- Applying simulated human-processing assumptions.
+- Evaluating estimated handling times and costs.
+- Distinguishing actual AI responses from rule-based fallback results.
+- Separating measured human review activity from simulated human baselines.
 
-The AI Prototype Testing environment enables users to evaluate the potential operational impact of AI-assisted claims processing.
+Simulated results are clearly distinguished from actual observations.
 
-Features include:
+### Administration
 
-- Selecting claims for prototype testing.
-- Comparing simulated human processing with AI-assisted processing.
-- Executing AI-assisted analysis using Google Gemini.
-- Reviewing claims routing recommendations.
-- Comparing estimated processing times.
-- Comparing estimated handling costs.
-- Exploring routing accuracy and workflow outcomes.
-- Distinguishing simulated results from actual AI outputs.
+The administration functionality supports demonstration and testing activities.
 
-**Evaluation methodology**
+Capabilities include:
 
-The prototype distinguishes between three types of information:
+- Generating synthetic insurance claims.
+- Preparing test datasets.
+- Configuring evaluation assumptions.
+- Supporting repeatable demonstration scenarios.
 
-**Simulated human processing:** Estimates based on defined assumptions about traditional claims handling.
-
-**AI-assisted processing:** Results produced through the prototype's AI-supported workflow, including Gemini-generated outputs where configured.
-
-**Actual human assessments:** Real human review results, which must be entered or collected separately rather than being presented as measured results when no review has occurred.
-
-This distinction is important to ensure that simulated performance is not confused with independently validated operational evidence.
-
-### 3.3 Administration
-
-The Administration interface supports the configuration and demonstration of ClaimsFlow.
-
-Features include:
-
-- Importing synthetic insurance claims.
-- Preparing datasets for prototype testing.
-- Supporting bulk import of up to 100 synthetic claims.
-- Managing assumptions used in workflow comparisons.
-- Preparing repeatable demonstration scenarios.
-
-The administration functionality enables the prototype to demonstrate how AI-assisted processing might perform across a larger claims workload rather than through isolated examples.
-
-## 4. Technology Stack
+## Technology Stack
 
 ### Frontend
 
@@ -99,188 +78,93 @@ The administration functionality enables the prototype to demonstrate how AI-ass
 - Vite
 - JavaScript
 - CSS
-- Supporting React interface libraries
 
 ### Backend
 
 - Python
 - FastAPI
 - Google Gemini API
-- JSON-based data storage
-- Supporting Python libraries for claims processing
+- JSON-based local data storage
 
-### Development Environment
+### Development
 
-- macOS
-- Visual Studio Code or equivalent editor
 - Git and GitHub
-- Local Python and Node.js environments
+- macOS
+- Node.js and npm
+- Python virtual environments
 
-### AI Integration
+## Application Architecture
 
-Google Gemini is used to support AI-based claims analysis, extraction and routing recommendations.
+ClaimsFlow uses a frontend/backend architecture.
 
-The application requires a valid Gemini API key for live AI functionality.
+**React frontend:** Provides the user interface, claims workbench and prototype evaluation views.
 
-Any rule-based or simulated fallback behaviour should be distinguished from successful live AI processing.
+**FastAPI backend:** Handles claims data, routing recommendations, review activity and evaluation requests.
 
-## 5. Claims Processing Workflow
+**Gemini integration:** Provides AI-assisted analysis where a valid API key is configured.
 
-ClaimsFlow demonstrates the following conceptual workflow:
+**Evaluation engine:** Supports comparisons of processing approaches using clearly identified assumptions and measured results.
 
-**Step 1 — Claim selection**
+**Local data storage:** Supports prototype claim records and related application data.
 
-A user selects an insurance claim from the Claims Inbox or prototype testing interface.
+## Installation
 
-**Step 2 — Claim analysis**
+### Requirements
 
-The application examines available claim information and, where configured, uses AI to support information extraction and analysis.
-
-**Step 3 — Validation**
-
-Relevant claim details are assessed for completeness and potential issues requiring further review.
-
-**Step 4 — Routing recommendation**
-
-The application generates or presents a recommended claims handling route.
-
-**Step 5 — Human oversight**
-
-The claims handler can review the recommendation and determine whether further investigation, specialist assessment or manual intervention is appropriate.
-
-**Step 6 — Performance evaluation**
-
-The testing environment compares workflow assumptions and AI-assisted outcomes to explore potential differences in handling time, cost and decision quality.
-
-## 6. Human-Only vs AI-Assisted Processing
-
-A central feature of ClaimsFlow is its ability to compare two approaches to insurance claims handling.
-
-| Dimension | Human-only workflow | AI-assisted workflow |
-|---|---|---|
-| Information review | Manual examination | AI-supported analysis |
-| Data extraction | Manual identification | AI-assisted extraction |
-| Claims routing | Human assessment | AI-generated recommendation with human oversight |
-| Processing time | Simulated baseline | AI workflow timing or estimates, as labelled |
-| Handling cost | Assumption-based estimate | Assumption-based estimate |
-| Decision quality | Requires human review evidence | Requires validation against reference decisions |
-
-The comparison is designed to support discussion about the potential benefits, limitations and implementation considerations of AI in insurance operations.
-
-The prototype does not establish that AI is universally faster, cheaper or more accurate than human claims handlers.
-
-## 7. Prototype Data and Evaluation
-
-ClaimsFlow uses synthetic insurance claims for demonstration and testing.
-
-Synthetic datasets allow different claim types and processing scenarios to be evaluated without requiring real customer information.
-
-The prototype supports comparisons involving:
-
-- Claims processing time.
-- Estimated handling cost.
-- AI routing recommendations.
-- Human review requirements.
-- Potential efficiency improvements.
-- Operational trade-offs between automation and human oversight.
-
-### Important Evaluation Limitations
-
-Simulated human handling times and costs are assumptions, not independently measured operational performance.
-
-AI-generated results require validation against appropriate reference outcomes before claims about accuracy or business performance can be substantiated.
-
-The prototype's outputs should therefore be interpreted as exploratory findings rather than production-ready performance evidence.
-
-## 8. Installation and Local Setup
-
-ClaimsFlow consists of a React frontend and a FastAPI backend.
-
-### Prerequisites
-
-The following software is required:
-
+- Python 3.11 or later, using a version supported by the project dependencies.
 - Node.js and npm.
-- Python and pip.
-- Git, if cloning from GitHub.
-- A Gemini API key for live AI functionality.
+- A Google Gemini API key for live AI processing.
 
-### 8.1 Obtain the Project
+### 1. Download the project
 
-Clone the private repository using an authorised GitHub account:
+Download or clone the private ClaimsFlow repository and open the project directory.
 
-```bash
-git clone https://github.com/jamiecm27/claimsflow-ankura-final.git
-cd claimsflow-ankura-final
-```
+### 2. Configure the backend
 
-Alternatively, download the project ZIP from GitHub and extract it locally.
-
-### 8.2 Configure the Backend
-
-Navigate to the backend directory:
+Open Terminal and navigate to the backend directory:
 
 ```bash
 cd backend
 ```
 
-Create a Python virtual environment:
+Create and activate a Python virtual environment:
 
 ```bash
 python3 -m venv .venv
-```
-
-Activate it on macOS:
-
-```bash
 source .venv/bin/activate
 ```
 
-Install the required Python dependencies:
+Install dependencies:
 
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-### 8.3 Configure Gemini
+### 3. Configure Gemini
 
-Create a local environment configuration file from the supplied example, if present:
+Create a local `.env` file using the supplied environment example, if present.
 
-```bash
-cp .env.example .env
-```
+Set the required Gemini API credentials according to the backend configuration.
 
-Edit `backend/.env` and add a valid Gemini API key:
+**Never commit API keys, credentials or `.env` files to GitHub.**
 
-```dotenv
-GEMINI_API_KEY=your_gemini_api_key
-```
+### 4. Start the backend
 
-Additional environment settings may be required depending on the current backend configuration.
-
-**Security:** Never upload `.env`, API keys, credentials or other secrets to GitHub.
-
-### 8.4 Start the Backend
-
-From the backend directory, with the virtual environment activated:
+From the backend directory:
 
 ```bash
 python -m uvicorn app:app --reload
 ```
 
-The default local backend address is:
+The backend normally runs at:
 
 http://127.0.0.1:8000
 
-FastAPI documentation, where enabled, is available at:
+### 5. Start the frontend
 
-http://127.0.0.1:8000/docs
+Open a second Terminal window and navigate to the project root.
 
-### 8.5 Start the Frontend
-
-Open a second Terminal window.
-
-Navigate to the project root and install the frontend dependencies:
+Install dependencies:
 
 ```bash
 npm install
@@ -292,110 +176,70 @@ Start the development server:
 npm run dev
 ```
 
-The default frontend address is:
+Open the address displayed by Vite, normally:
 
 http://localhost:5173
 
-The actual address may differ if the configured port is already in use.
+### macOS launcher
 
-### 8.6 macOS Launcher
+The project includes `start_claimsflow.command` to simplify startup on supported Macs.
 
-The project includes a `start_claimsflow.command` launcher intended to simplify local startup.
+Dependencies must be installed locally before the launcher can operate successfully.
 
-After installing the required dependencies, macOS users may launch the application through this script.
+## Evaluation Methodology
 
-Python virtual environments are machine-specific. When moving the project between Macs, each computer should create its own environment rather than relying on a copied `.venv` directory.
+ClaimsFlow distinguishes between three categories of results.
 
-The launcher and its configuration may need adjustment for the local installation path.
+**Actual AI results:** Outputs generated by a successful Gemini request.
 
-## 9. Security and Data Handling
+**Simulated human baselines:** Estimates based on configurable assumptions about traditional claims handling.
 
-ClaimsFlow is a prototype and has not been designed or certified for production use.
+**Measured human assessments:** Results recorded through actual human review activity.
 
-The following restrictions apply:
+Rule-based fallback processing is identified separately and must not be presented as successful live AI processing.
 
-- Use synthetic or appropriately authorised test data.
-- Do not upload real customer claims or sensitive personal information without suitable controls.
-- Keep Gemini API credentials outside version control.
-- Restrict repository access to authorised collaborators.
-- Do not assume that prototype outputs are suitable for automated insurance decisions.
-- Do not expose the development backend directly to the public internet without appropriate security controls.
+This separation is intended to support transparent interpretation of prototype results.
 
-Production deployment would require additional work covering authentication, authorisation, data protection, logging, monitoring, security testing and operational resilience.
+## Current Limitations
 
-## 10. Prototype Limitations
+ClaimsFlow is an experimental prototype rather than a production claims management system.
 
-ClaimsFlow is intended to demonstrate a potential AI-enabled claims handling approach.
+The current rebuild has not yet completed every feature of the earlier demonstration, including document upload and preview, bulk ZIP import and reference-field scoring.
 
-Current limitations include:
+The application has not undergone production security testing or validation against real insurance claims workloads.
 
-- Reliance on synthetic claims and simulated operational assumptions.
-- Limited evidence of real-world processing performance.
-- AI outputs that may be inaccurate or incomplete.
-- No independently established production-level routing accuracy.
-- No validated production fraud detection capability.
-- No assurance of compliance with insurer-specific operational requirements.
-- Development-oriented architecture rather than a hardened production deployment.
+Its performance comparisons are exploratory and should not be treated as independently verified business outcomes.
 
-These limitations should be considered when interpreting the prototype's outputs.
+## Future Development
 
-## 11. Potential Future Development
+Potential enhancements include:
 
-Possible extensions include:
-
-- Integration with real insurance claims management systems.
-- Structured human review and feedback capture.
-- Larger-scale evaluation against independently labelled claims.
-- Improved document processing and OCR.
-- More detailed cost and productivity modelling.
+- PDF document upload and preview.
+- Bulk synthetic claim imports.
+- More comprehensive routing accuracy evaluation.
+- Structured human feedback collection.
+- Expanded AI model evaluation.
+- Centralised multi-user data storage.
 - Authentication and role-based access controls.
-- Centralised data storage for multi-user collaboration.
-- Monitoring and audit trails for AI recommendations.
-- Production-oriented security and deployment architecture.
-- Model performance monitoring and governance controls.
+- Operational dashboards and audit trails.
+- Production deployment and security controls.
 
-## 12. Author and Acknowledgements
+## Security and Responsible Use
 
-### ClaimsFlow Development
+ClaimsFlow is intended for synthetic or appropriately authorised test data.
+
+It should not be used to process real customer claims or sensitive personal information without appropriate security, privacy and governance controls.
+
+AI-generated recommendations require suitable human oversight and validation.
+
+## Developer
 
 **Jamie Campbell-Mooney**
 
-Developer of the adapted and extended ClaimsFlow insurance claims workbench.
+ClaimsFlow was developed for an AI Advisory prototype assessment in November 2026.
 
-Developed for the Ankura AI Advisory prototype assessment, November 2026.
+## Project Status
 
-### Original Project Attribution
+**Private proof of concept — November 2026**
 
-ClaimsFlow builds upon the original **AI-Based Insurance Claim Extraction & Routing Agent** developed by **Sanket Barde**.
-
-Original GitHub repository:
-
-https://github.com/SANKETBARDE/FNOL_Claim_Extraction
-
-Sanket Barde's original project provided a technical foundation for insurance document extraction, validation, claims routing and elements of the React/FastAPI application architecture.
-
-Jamie Campbell-Mooney subsequently adapted and extended this foundation into the ClaimsFlow workbench, adding functionality focused on human-versus-AI workflow comparisons, prototype testing, synthetic claims evaluation, operational performance analysis and administration.
-
-**Full acknowledgement and credit are given to Sanket Barde for his original work.**
-
-Copyright in the original code remains with its respective copyright holder. Jamie Campbell-Mooney does not claim ownership of Sanket Barde's original contributions.
-
-The original repository does not appear to provide an explicit software licence. This attribution does not itself grant permission to reproduce, modify or redistribute the original code.
-
-## 13. Private Prototype Notice
-
-**Project classification: Private, non-commercial educational and assessment prototype.**
-
-ClaimsFlow has been prepared for demonstration, learning and evaluation in connection with the Ankura AI Advisory assessment.
-
-The repository is intended to remain private and accessible only to authorised collaborators.
-
-It is not intended for public distribution, commercial deployment or use in live insurance claims processing.
-
-Private or non-commercial status does not override third-party copyright or software licensing requirements. Permission may be needed for continued reuse or redistribution of original third-party code.
-
----
-
-**ClaimsFlow | Jamie Campbell-Mooney | November 2026**
-
-*AI-Assisted Insurance Claims Workbench — Private Proof of Concept*
+This application is intended for demonstration, learning and evaluation. It is not a production insurance claims processing system.
