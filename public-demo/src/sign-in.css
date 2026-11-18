@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100svh; display: grid; place-items: center; padding: 24px; background: #f5f7fb; color: #18243b; font: 15px/1.55 Inter, system-ui, sans-serif; }
+.sign-in { width: 100%; max-width: 450px; border: 1px solid #e3e9f1; border-radius: 16px; overflow: hidden; background: #fff; box-shadow: 0 14px 48px #14243b11; }
+.brand { display: flex; align-items: center; gap: 13px; padding: 23px 30px; background: #111d34; color: #fff; }
+.brand strong { font-size: 19px; letter-spacing: 1px; }
+.brand span { color: #65d8bc; }
+.brand small { display: block; color: #a7b6ca; font-size: 11px; }
+section { padding: 28px 30px; }
+h1 { margin: 0 0 8px; font-size: clamp(22px, 6vw, 28px); letter-spacing: -0.6px; }
+p { margin: 0; color: #52637b; }
+.primary { display: flex; justify-content: space-between; align-items: center; margin-top: 24px; padding: 12px 15px; border-radius: 8px; background: #176c72; color: #fff; font-weight: 700; text-decoration: none; }
+.primary:hover { background: #11595f; }
+.primary:focus-visible { outline: 3px solid #24958f; outline-offset: 3px; }
+.support { margin-top: 13px; font-size: 12px; }

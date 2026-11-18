@@ -1,0 +1,92 @@
+[
+  {
+    "id": "CLM-001",
+    "title": "01 Rear End No Injury",
+    "status": "New",
+    "documents": [
+      "FNOL_sample_01_rear_end_no_injury_clean.pdf",
+      "CLM_001_supporting_evidence.pdf"
+    ],
+    "description": "01 Rear End No Injury",
+    "claim_type": "Motor",
+    "claimant": "Synthetic claimant",
+    "policy_number": "",
+    "estimated_damage": 0,
+    "reference": {}
+  },
+  {
+    "id": "CLM-002",
+    "title": "02 Hit And Run Injury",
+    "status": "New",
+    "documents": [
+      "FNOL_sample_02_hit_and_run_injury_clean.pdf",
+      "CLM_002_supporting_evidence.pdf"
+    ],
+    "description": "02 Hit And Run Injury",
+    "claim_type": "Motor",
+    "claimant": "Synthetic claimant",
+    "policy_number": "",
+    "estimated_damage": 0,
+    "reference": {}
+  },
+  {
+    "id": "CLM-003",
+    "title": "03 Theft Recovered",
+    "status": "New",
+    "documents": [
+      "FNOL_sample_03_theft_recovered_clean.pdf",
+      "CLM_003_supporting_evidence.pdf"
+    ],
+    "description": "03 Theft Recovered",
+    "claim_type": "Motor",
+    "claimant": "Synthetic claimant",
+    "policy_number": "",
+    "estimated_damage": 0,
+    "reference": {}
+  },
+  {
+    "id": "CLM-004",
+    "title": "04 Multi Vehicle Property Damage",
+    "status": "New",
+    "documents": [
+      "FNOL_sample_04_multi_vehicle_property_damage_clean.pdf",
+      "CLM_004_supporting_evidence.pdf"
+    ],
+    "description": "04 Multi Vehicle Property Damage",
+    "claim_type": "Motor",
+    "claimant": "Synthetic claimant",
+    "policy_number": "",
+    "estimated_damage": 0,
+    "reference": {}
+  },
+  {
+    "id": "CLM-005",
+    "title": "05 Vandalism Glass Only",
+    "status": "New",
+    "documents": [
+      "FNOL_sample_05_vandalism_glass_only_clean.pdf",
+      "CLM_005_supporting_evidence.pdf"
+    ],
+    "description": "05 Vandalism Glass Only",
+    "claim_type": "Motor",
+    "claimant": "Synthetic claimant",
+    "policy_number": "",
+    "estimated_damage": 0,
+    "reference": {}
+  },
+  {
+    "id": "CLM-006",
+    "title": "06 Weather Hail Damage",
+    "status": "New",
+    "documents": [
+      "FNOL_sample_06_weather_hail_damage_clean.pdf",
+      "CLM_006_supporting_evidence.pdf"
+    ],
+    "description": "06 Weather Hail Damage",
+    "claim_type": "Motor",
+    "claimant": "Synthetic claimant",
+    "policy_number": "",
+    "estimated_damage": 0,
+    "reference": {}
+  }
+]

@@ -1,6 +1,1 @@
-fastapi
-uvicorn
-pymupdf
-python-multipart
-google-genai
-pytest
+-r requirements-lock.txt

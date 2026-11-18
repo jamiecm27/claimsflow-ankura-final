@@ -62,3 +62,17 @@ input:disabled,textarea:disabled,select:disabled{background:#f4f7fa;color:#34465
 /* Compact inline checkbox for simulation option */
 .admin-panel>label:has(input[type="checkbox"]){display:inline-flex;align-items:center;justify-content:flex-start;gap:8px;width:auto;max-width:100%;cursor:pointer;margin:12px 0}
 .admin-panel>label:has(input[type="checkbox"]) input[type="checkbox"]{width:16px;height:16px;flex:0 0 16px;margin:0}
+
+/* Inline Gemini setup; retains the existing Administration visual style. */
+.gemini-setup{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.gemini-setup input{flex:1;min-width:240px;max-width:520px}
+
+
+.topbar .app-version { margin-top: 6px; font-size: 12px; }
+
+.inbox-guide { padding: 18px 22px; margin-bottom: 20px; }
+.inbox-guide ol { margin: 10px 0; padding-left: 22px; color: #33475e; }
+.inbox-guide li + li { margin-top: 6px; }
+.claim-search { max-width: 300px; }
+
+.fields label:has(.gemini-field) :is(input, textarea) { border-color: #85b8ae; background: #f1f9f7; }
+.gemini-field { font-size: 11px; font-weight: 600; color: #35665d; white-space: pre-wrap; overflow-wrap: anywhere; }
